@@ -1,0 +1,292 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage[utf8]{inputenc}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+
+\begin{center}
+    {\Huge \scshape Mohamed Wael ElTeir} \\ \vspace{1pt}
+    \small \raisebox{-0.1\height}\faPhone\ +20-1022740002 ~ \href{mailto:moh_wael860@hotmail.com}{\raisebox{-0.2\height}\faEnvelope\ \nolinkurl{moh\_wael860@hotmail.com}} ~ 
+    \href{https://linkedin.com/in/mohamedwelteir}{\raisebox{-0.2\height}\faLinkedin\ \nolinkurl{linkedin.com/in/mohamedwelteir}}  ~
+    \href{https://github.com/MohamedWElteir}{\raisebox{-0.2\height}\faGithub\ \nolinkurl{github.com/MohamedWElteir}}
+    \vspace{-8pt}
+\end{center}
+
+%----------SUMMARY----------
+\section{Summary}
+\resumeSubHeadingListStart
+\item
+  \small{
+    {Enthusiastic software engineer with a deep passion for software development and a strong foundation in various programming languages. Equipped with knowledge in the .NET framework for building efficient and scalable applications as well as experienced in crafting clean code for efficient problem-solving.} 
+  }
+\resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Alexandria University}{September 2021 -- May 2025}
+      {Bachelor of Science in Computer Science}{GPA: 3.52}
+    \resumeSubheading
+      {Saint Marc College}{May 2007 -- August 2021}
+      {Diploma}{GPA: 2.83}
+  \resumeSubHeadingListEnd
+
+%-----------Professional Training-----------
+\section{Professional Training}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Coach Academy}{April 2024 -- October 2024}
+      {Competitive Programming and Problem Solving}{}
+      \resumeItemListStart
+        \resumeItem{Participated in a 6-month intensive training program focusing on competitive programming and problem-solving.}
+        \resumeItem{Enhanced problem-solving skills and learned advanced algorithms and data structures.}
+        \resumeItem{Developed a strong foundation in competitive programming and problem-solving techniques.}
+      \resumeItemListEnd
+
+      \resumeSubheading
+        {Information Technology Institute (ITI)}{August 2024 -- September 2024}
+        {Open Source Development}{}
+        \resumeItemListStart
+          \resumeItem{Participated in a 6-week training program focusing on open-source development and software engineering.}
+          \resumeItem{Developed a strong foundation in software engineering and open-source development.}
+        \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+  
+%------RELEVANT COURSEWORK-------
+\section{Relevant Coursework}
+
+        \begin{multicols}{4}
+            \begin{itemize}[itemsep=-5pt, parsep=3pt]
+                \item\small Data Structures
+                \item Software Methodology
+                \item Algorithms Analysis
+                \item Database Management
+                \item Artificial Intelligence
+                \item Internet Technology
+                \item Systems Programming
+                \item Computer Architecture
+            \end{itemize}
+        \end{multicols}
+        \vspace*{2.0\multicolsep}
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: C\#, Java, C++, GO, Python, JavaScript, TypeScript, Julia} \\
+     \textbf{Technologies/Frameworks}{: ASP.NET, Jenkins, Jira, Docker, Git, GitHub, Postman, Express on NodeJS} \\
+     \textbf{Programming Concepts}{: Object Oriented Design and Programming, Data Structures, Algorithms } \\
+    \textbf{Database Management}{: MS SQL, MySQL} \\
+    }}
+ \end{itemize}
+ \vspace{-16pt}
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+ 
+    \resumeSubheading
+      {Upwork}{August 2019 -- March 2020}
+      {Software Developer Freelancer}{Remote}
+      \resumeItemListStart
+        \resumeItem{Developed several websites for many clients that are being used till today.}
+        \resumeItem{Assisted some of the clients with their existing websites and integrated some new features.}
+        \resumeItem{Explored ways to visualize and enhancing my development  with HTML, JavaScript, and CSS.}
+      \resumeItemListEnd
+  
+  \resumeSubHeadingListEnd
+\vspace{-16pt}
+%-----------PROJECTS-----------
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{University Grades Notifier API} $|$ \emph{.NET}}{June 2024}
+          \resumeItemListStart
+            \resumeItem{Developed an API that logs to my university's portal, fetches all grades and sends them in a push notification only if any grade has been revealed.}
+          \resumeItemListEnd
+          \vspace{-13pt}
+     \resumeProjectHeading
+{\textbf{Mini Search Engine} $|$ \emph{Python} $|$ \faGithub \ \href{https://github.com/MohamedWElteir/Search-Engine-In-Python}{GitHub}}{April 2024}
+\resumeItemListStart
+\resumeItem{Created a basic search engine capable of processing and ranking documents based on relevance metrics such as Cosine-Similarity, Jaccard-Similarity, and others.}
+\resumeItem{Implemented Likelihood Models to enhance the engine's responsiveness and accuracy.}
+\resumeItemListEnd
+          \vspace{-13pt}
+          \resumeProjectHeading
+{\textbf{Turing Machine Simulator} $|$ \emph{C++} $|$ \faGithub \ \href{https://github.com/MohamedWElteir/Turing-Machine-Simulator}{GitHub}}{October 2023}
+\resumeItemListStart
+\resumeItem{Designed a console-based Turing Machine for my Theory of Computations course that behaves exactly like the actual machine.}
+\resumeItemListEnd
+    \resumeSubHeadingListEnd
+\vspace{-15pt}
+
+%-----------Achievements-----------
+\section{Achievements}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+     {\textbf{Egyptian Collegiate Programming Contest (ECPC)} $|$ \href{https://icpc.global/ICPCID/8H1UPW16WJN6}{\faGlobe}}{2023, 2024} 
+      {Contestant}{}
+      \resumeItemListStart
+        \resumeItem{Competed in the prestigious ICPC, enhancing problem-solving skills and algorithmic thinking.}
+        \resumeItem{Twice finalist in regional qualifications contests, solving a wide range of complex algorithmic challenges.}
+      \resumeItemListEnd
+    \resumeSubheading
+    {\textbf{Meta Hacker Cup} $|$ \href{https://www.facebook.com/codingcompetitions/hacker-cup/2024/certificate/440863471706931}{\faGlobe}}{2024}
+    {Contestant}{}
+    \resumeItemListStart
+    \resumeItem{Participated in the Meta Hacker Cup, solving a series of algorithmic challenges in a timed environment.}
+    \resumeItem{Progressed to the first round of the competition, solving a wide range of algorithmic challenges.}
+    \resumeItemListEnd
+
+    \resumeSubheading
+    {IEEE AlexSB}{2024}
+    {Contestant}{}
+    \resumeItemListStart
+    \resumeItem{Participated in the IEEE AlexSB Programming Contest, solving a series of algorithmic challenges in a timed environment.}
+    \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+
+%-----------INVOLVEMENT---------------
+\section{Volunteer Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {HackerRank Campus Club,
+AUFS}{January 2024 -- October 2024}
+      {Head of the Backend track}{Alexandria University}
+      \resumeItemListStart
+        \resumeItem{Served as the head and instructor for the back-end track, utilizing the .NET framework to teach and mentor students.}
+        \resumeItem{Led a highly productive team that successfully completed multiple projects and significantly improved post-campus performance.}
+        \resumeItem{Managed the executive board of 5 members, conducting weekly meetings to monitor and drive progress in key areas.}
+        \resumeItem{Directed a chapter of over 20 members, focusing on community service, teamwork, creativity, academic excellence, and mentorship.}
+      \resumeItemListEnd
+      \resumeSubheading
+      {White Virus}{March 2023 -- August 2023}
+      {Vice Head of IT Track}{Alexandria University}
+        \resumeItemListStart
+            \resumeItem{Served as the vice head of the IT track, focusing on software development and problem-solving.}
+            \resumeItem{Led to the successful completion of multiple projects that significantly improved the club's performance.}
+        \resumeItemListEnd
+  \resumeSubHeadingListEnd
+\end{document}
