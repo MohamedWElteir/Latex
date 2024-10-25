@@ -1,0 +1,5 @@
+# ignore all files in the CV directory except the .pdf and .tex files
+
+CV/*
+!CV/*.pdf
+!CV/*.tex
