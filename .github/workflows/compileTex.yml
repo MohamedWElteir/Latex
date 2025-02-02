@@ -14,14 +14,14 @@ jobs:
       - name: Compile LaTeX
         uses: xu-cheng/latex-action@v2
         with:
-          root_file: Mohamed_Wael_CV.tex
+          root_file: CV/Mohamed_Wael_CV.tex
           shell_escape: true
 
       - name: Upload PDF artifact (optional)
         uses: actions/upload-artifact@v4
         with:
           name: Mohamed_Wael_CV
-          path: Mohamed_Wael_CV.pdf 
+          path: CV/Mohamed_Wael_CV.pdf 
 
       - name: Commit and push PDF
         uses: stefanzweifel/git-auto-commit-action@v5
