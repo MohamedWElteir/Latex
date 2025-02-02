@@ -1,0 +1,33 @@
+name: Compile LaTeX
+
+on:
+  push:
+    branches: [ "software-engineering" ] 
+
+jobs:
+  build_latex:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Compile LaTeX
+        uses: xu-cheng/latex-action@v2
+        with:
+          root_file: Mohamed_Wael_CV.tex
+          shell_escape: true
+
+      - name: Upload PDF artifact (optional)
+        uses: actions/upload-artifact@v3
+        with:
+          name: Mohamed_Wael_CV.pdf
+          path: ./Mohamed_Wael_CV.pdf # Path to generated PDF
+
+      - name: Commit and push PDF
+        uses: github-actions-x/commit-push@v2.8
+        with:
+          branch: main
+          commit_message: "Automated PDF commit"
+          files: Mohamed_Wael_CV.pdf
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # For push permissions
