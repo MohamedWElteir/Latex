@@ -10,6 +10,8 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
+        with:
+            ref: ${{ github.ref_name }}
 
       - name: Compile LaTeX
         uses: xu-cheng/latex-action@v2
