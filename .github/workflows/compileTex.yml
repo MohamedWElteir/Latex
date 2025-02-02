@@ -3,7 +3,6 @@ name: Compile LaTeX
 on:
   push:
     branches: [ "**" ] 
-
 jobs:
   build_latex:
     runs-on: ubuntu-latest
@@ -11,27 +10,28 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
         with:
-          ref: ${{ github.ref_name }}  
-
-      - name: List files in workspace  
+          ref: ${{ github.ref_name }}
+          fetch-depth: 0 
+      - name: List files in workspace 
         run: |
           echo "Files in workspace:"
-          ls -R /github/workspace
+          ls -R ./
 
       - name: Compile LaTeX
         uses: xu-cheng/latex-action@v2
         with:
-          root_file: ./CV/Mohamed_Wael_CV.tex 
+          root_file: ./CV/Mohamed_Wael_CV.tex
           shell_escape: true
 
       - name: Upload PDF artifact (optional)
         uses: actions/upload-artifact@v4
         with:
           name: Mohamed_Wael_CV
-          path: ./CV/Mohamed_Wael_CV.pdf  
+          path: ./CV/Mohamed_Wael_CV.pdf
 
       - name: Commit and push PDF
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "Automated PDF commit"
-          file_pattern: ./CV/Mohamed_Wael_CV.pdf 
+          file_pattern: ./CV/Mohamed_Wael_CV.pdf
+          skip_dirty_check: false 
