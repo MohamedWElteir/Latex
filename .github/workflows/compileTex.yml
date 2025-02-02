@@ -18,16 +18,13 @@ jobs:
           shell_escape: true
 
       - name: Upload PDF artifact (optional)
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
-          name: Mohamed_Wael_CV.pdf
-          path: ./Mohamed_Wael_CV.pdf 
+          name: Mohamed_Wael_CV
+          path: Mohamed_Wael_CV.pdf 
 
       - name: Commit and push PDF
-        uses: github-actions-x/commit-push@v2.8
+        uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          branch: ${{ github.ref_name }}
           commit_message: "Automated PDF commit"
-          files: Mohamed_Wael_CV.pdf
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} 
+          file_pattern: Mohamed_Wael_CV.pdf
