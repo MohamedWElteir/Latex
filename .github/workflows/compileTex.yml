@@ -2,7 +2,7 @@ name: Compile LaTeX
 
 on:
   push:
-    branches: [ "software-engineering" ] 
+    branches: [ "**" ] 
 
 jobs:
   build_latex:
@@ -21,13 +21,13 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: Mohamed_Wael_CV.pdf
-          path: ./Mohamed_Wael_CV.pdf # Path to generated PDF
+          path: ./Mohamed_Wael_CV.pdf 
 
       - name: Commit and push PDF
         uses: github-actions-x/commit-push@v2.8
         with:
-          branch: main
+          branch: ${{ github.ref_name }}
           commit_message: "Automated PDF commit"
           files: Mohamed_Wael_CV.pdf
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # For push permissions
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} 
